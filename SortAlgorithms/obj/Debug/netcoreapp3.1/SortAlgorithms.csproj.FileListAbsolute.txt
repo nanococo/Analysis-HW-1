@@ -1,0 +1,11 @@
+C:\GitHub_Projects\Analysis-HW-1\SortAlgorithms\bin\Debug\netcoreapp3.1\SortAlgorithms.exe
+C:\GitHub_Projects\Analysis-HW-1\SortAlgorithms\bin\Debug\netcoreapp3.1\SortAlgorithms.deps.json
+C:\GitHub_Projects\Analysis-HW-1\SortAlgorithms\bin\Debug\netcoreapp3.1\SortAlgorithms.runtimeconfig.json
+C:\GitHub_Projects\Analysis-HW-1\SortAlgorithms\bin\Debug\netcoreapp3.1\SortAlgorithms.runtimeconfig.dev.json
+C:\GitHub_Projects\Analysis-HW-1\SortAlgorithms\bin\Debug\netcoreapp3.1\SortAlgorithms.dll
+C:\GitHub_Projects\Analysis-HW-1\SortAlgorithms\bin\Debug\netcoreapp3.1\SortAlgorithms.pdb
+C:\GitHub_Projects\Analysis-HW-1\SortAlgorithms\obj\Debug\netcoreapp3.1\SortAlgorithms.csprojAssemblyReference.cache
+C:\GitHub_Projects\Analysis-HW-1\SortAlgorithms\obj\Debug\netcoreapp3.1\SortAlgorithms.AssemblyInfoInputs.cache
+C:\GitHub_Projects\Analysis-HW-1\SortAlgorithms\obj\Debug\netcoreapp3.1\SortAlgorithms.AssemblyInfo.cs
+C:\GitHub_Projects\Analysis-HW-1\SortAlgorithms\obj\Debug\netcoreapp3.1\SortAlgorithms.dll
+C:\GitHub_Projects\Analysis-HW-1\SortAlgorithms\obj\Debug\netcoreapp3.1\SortAlgorithms.pdb
