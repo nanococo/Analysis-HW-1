@@ -4,10 +4,19 @@ using UnityEngine;
 
 public class BubbleSort : MonoBehaviour
 {
+
+    public int n;
+    public GameObject NAxis;
+    public GameObject TAxis;
+    private float maxN;
+  
+    
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        maxN = 10000;
+        transform.position += new Vector3(calculateXPosition(), 7.0f, 0.0f);
     }
 
     // Update is called once per frame
@@ -33,5 +42,12 @@ public class BubbleSort : MonoBehaviour
             }
         }
     }
+
+    private float calculateXPosition()
+    {
+        return (n * NAxis.transform.localScale.x) / maxN;
+    }
+
+
 
 }
