@@ -6,31 +6,35 @@ public class BubbleSort : MonoBehaviour {
 
     private Stopwatch stopWatch = new Stopwatch();
     private System.Random random = new System.Random();
-    public int elementsInArray;
-    public float yAxis;
+    public float miliseconds;
     private int[] list;
     public int n;
     public GameObject NAxis;
     public GameObject TAxis;
     private float maxN;
+    private float maxTime;
 
 
     // Start is called before the first frame update
     void Start() {
-        this.list = new int[elementsInArray];
+        this.list = new int[n];
         this.PopulateArray();
-        this.yAxis = this.sort(this.list);
+
         maxN = 10000;
-        transform.position += new Vector3(calculateXPosition(), yAxis, 0.0f);   
+        maxTime = 1000;
+
+        this.miliseconds = this.sort(this.list);
+
+        transform.position += new Vector3(calculateXPosition(), calculateYPosition(), 0.0f);   
     }
 
     // Update is called once per frame
     void Update() {
         
-    }
+    } 
 
     private void PopulateArray() {
-        int populateTimes = this.elementsInArray;
+        int populateTimes = this.n;
 
         try {
             for (int i = populateTimes; i <= 0; i--) {
@@ -67,5 +71,8 @@ public class BubbleSort : MonoBehaviour {
     }
 
 
-
+    private float calculateYPosition()
+    {
+        return (miliseconds * TAxis.transform.localScale.y) / maxTime;
+    }
 }
