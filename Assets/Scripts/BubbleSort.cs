@@ -9,6 +9,10 @@ public class BubbleSort : MonoBehaviour {
     public int elementsInArray;
     public float yAxis;
     private int[] list;
+    public int n;
+    public GameObject NAxis;
+    public GameObject TAxis;
+    private float maxN;
 
 
     // Start is called before the first frame update
@@ -16,7 +20,8 @@ public class BubbleSort : MonoBehaviour {
         this.list = new int[elementsInArray];
         this.PopulateArray();
         this.yAxis = this.sort(this.list);
-        transform.position += new Vector3(15.0f, yAxis, 0.0f);        
+        maxN = 10000;
+        transform.position += new Vector3(calculateXPosition(), yAxis, 0.0f);   
     }
 
     // Update is called once per frame
@@ -55,5 +60,12 @@ public class BubbleSort : MonoBehaviour {
         System.TimeSpan ts = stopWatch.Elapsed;
         return (float) ts.TotalMilliseconds;
     }
+
+    private float calculateXPosition()
+    {
+        return (n * NAxis.transform.localScale.x) / maxN;
+    }
+
+
 
 }
