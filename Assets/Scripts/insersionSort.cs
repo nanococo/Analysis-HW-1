@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using UnityEngine;
 
-public class insersionSort : MonoBehaviour {
+public class QuickSort : MonoBehaviour {
 
 
     private Stopwatch stopWatch = new Stopwatch();
